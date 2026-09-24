@@ -1,0 +1,66 @@
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header .container {
+  display: flex;
+}
+.main-nav {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 76px;
+  margin-right: 340px;
+}
+.main-nav-list {
+  display: flex;
+  gap: 40px;
+}
+.main-nav-list-item {
+}
+.main-nav-list-link {
+  position: relative;
+  padding: 24px 0;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-nav-list-link.is-active {
+  color: #404bbf;
+}
+.main-nav-list-link.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background: #404bbf;
+}
+.main-nav-list-link:hover,
+.main-nav-list-link:focus {
+  color: #404bbf;
+}
+.contacts {
+}
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.contacts-item {
+}
+.contacts-link {
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  font-weight: 400;
+  font-size: 16px;
+  color: #404bbf;
+}
