@@ -117,6 +117,9 @@
   color: #fff;
 }
 @media screen and (min-width: 768px) {
+  .footer-list {
+    justify-content: start;
+  }
   .footer-desc {
     width: 264px;
   }
@@ -153,7 +156,6 @@
     padding: 100px 0;
   }
   .footer-container {
-    padding: 0 15px;
     gap: 0;
   }
   .social-container {
