@@ -1,11 +1,8 @@
-.team {
-}
-.team-title {
-}
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  justify-content: center;
+  gap: 72px;
 }
 .team-item {
   box-shadow:
@@ -14,9 +11,13 @@
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
   border-radius: 0 0 4px 4px;
   background-color: #fff;
-  width: calc((100% - 24px * 3) / 4);
+  max-width: 264px;
 }
-.team-pic {
+.team-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 16px;
 }
 .team-name {
   font-weight: 500;
@@ -26,15 +27,7 @@
   color: #2e2f42;
 }
 .team-position {
-  font-weight: 400;
-  font-size: 16px;
   text-align: center;
-}
-.team-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 32px 16px;
 }
 .social-list {
   display: flex;
@@ -56,4 +49,9 @@
 .social-link:hover,
 .social-link:focus {
   background-color: #404bbf;
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    gap: 64px 24px;
+  }
 }

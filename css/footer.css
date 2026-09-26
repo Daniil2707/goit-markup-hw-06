@@ -1,14 +1,18 @@
 .footer {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: #2e2f42;
 }
 .footer-desc {
-  width: 264px;
+  width: 288px;
   color: #f4f4fd;
 }
+.desc-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
 .footer-logo {
-  display: inline-block;
-  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -18,6 +22,7 @@
   color: #f4f4fd;
 }
 .footer-text {
+  text-align: center;
   font-weight: 500;
   color: #fff;
 }
@@ -25,6 +30,7 @@
   display: flex;
   margin-top: 16px;
   gap: 16px;
+  justify-content: center;
 }
 .footer-social-link {
   display: flex;
@@ -45,30 +51,30 @@
 }
 .footer-container {
   display: flex;
-}
-.desc-container {
-  margin: 0;
-}
-.social-container {
-  margin-left: 120px;
+  flex-direction: column;
+  gap: 72px;
 }
 .subscription-container {
-  margin-left: 83px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 .subscription-text {
   font-weight: 500;
   color: #fff;
-  margin-bottom: 16px;
 }
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 .footer-form-input {
   border: 1px solid #fff;
   border-radius: 4px;
   padding: 8px 16px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   background-color: transparent;
   outline: transparent;
@@ -92,7 +98,6 @@
   width: 165px;
   height: 40px;
   background-color: #4d5ae5;
-  border: none;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -109,4 +114,51 @@
 }
 .footer-send-icon {
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .footer-desc {
+    width: 264px;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+    column-gap: 24px;
+    flex-direction: row;
+    padding: 0 108px;
+  }
+  .desc-container {
+    align-items: start;
+  }
+  .footer-text {
+    text-align: start;
+  }
+  .subscription-container {
+    justify-content: start;
+  }
+  .footer-form-input {
+    width: 264px;
+  }
+  .subscription-container {
+    display: block;
+  }
+  .footer-form {
+    gap: 24px;
+  }
+  .subscription-text {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+  .footer-container {
+    padding: 0 15px;
+    gap: 0;
+  }
+  .social-container {
+    margin-left: 120px;
+  }
+  .subscription-container {
+    margin-left: 83px;
+  }
 }
