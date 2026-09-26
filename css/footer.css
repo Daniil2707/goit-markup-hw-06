@@ -156,6 +156,7 @@
     padding: 100px 0;
   }
   .footer-container {
+    padding: 0;
     gap: 0;
   }
   .social-container {
